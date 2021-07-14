@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorDark"
-    tools:context=".fragments.HomeFragment">
+    tools:context=".ui.main_screen.fragments.HomeFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -32,11 +32,16 @@
 
         </Toolbar>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_view"
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/player_view"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_alignParentBottom="true"
-            android:layout_below="@+id/toolbar" />
+            android:layout_height="@dimen/_300sdp"
+            />
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/recycler_view"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_below="@+id/toolbar" />-->
     </RelativeLayout>
 </FrameLayout>

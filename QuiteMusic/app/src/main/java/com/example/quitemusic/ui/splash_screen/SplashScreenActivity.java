@@ -1,4 +1,4 @@
-package com.example.quitemusic.acitvities;
+package com.example.quitemusic.ui.splash_screen;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,7 @@ import android.os.Looper;
 import android.view.WindowManager;
 
 import com.example.quitemusic.R;
+import com.example.quitemusic.ui.main_screen.MainActivity;
 
 public class SplashScreenActivity extends AppCompatActivity {
 

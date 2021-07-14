@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/library_graph"
+    app:startDestination="@id/yourLibrary">
+
+    <fragment
+        android:id="@+id/yourLibrary"
+        android:name="com.example.quitemusic.ui.main_screen.fragments.YourLibrary"
+        android:label="fragment_your_library"
+        tools:layout="@layout/fragment_your_library" />
+</navigation>

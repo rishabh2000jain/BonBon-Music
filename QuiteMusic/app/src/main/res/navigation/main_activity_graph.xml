@@ -3,21 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_activity_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@+id/home_graph">
 
-    <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.example.quitemusic.fragments.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
-    <fragment
-        android:id="@+id/yourLibrary"
-        android:name="com.example.quitemusic.fragments.YourLibrary"
-        android:label="fragment_your_library"
-        tools:layout="@layout/fragment_your_library" />
-    <fragment
-        android:id="@+id/searchFragment"
-        android:name="com.example.quitemusic.fragments.SearchFragment"
-        android:label="fragment_search"
-        tools:layout="@layout/fragment_search" />
+    <!--    <fragment-->
+    <!--        android:id="@+id/homeFragment"-->
+    <!--        android:name="com.example.quitemusic.ui.main_screen.fragments.HomeFragment"-->
+    <!--        android:label="fragment_home"-->
+    <!--        tools:layout="@layout/fragment_home" />-->
+    <!--    <fragment-->
+    <!--        android:id="@+id/yourLibrary"-->
+    <!--        android:name="com.example.quitemusic.ui.main_screen.fragments.YourLibrary"-->
+    <!--        android:label="fragment_your_library"-->
+    <!--        tools:layout="@layout/fragment_your_library" />-->
+    <!--    <fragment-->
+    <!--        android:id="@+id/searchFragment"-->
+    <!--        android:name="com.example.quitemusic.ui.main_screen.fragments.SearchFragment"-->
+    <!--        android:label="fragment_search"-->
+    <!--        tools:layout="@layout/fragment_search" />-->
+
+    <include app:graph="@navigation/home_graph" />
+    <include app:graph="@navigation/search_graph" />
+    <include app:graph="@navigation/library_graph" />
 </navigation>
